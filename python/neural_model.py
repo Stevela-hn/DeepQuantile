@@ -48,7 +48,7 @@ class QuantileNetworkModule(nn.Module):
             mdl_structure.append(nn.Linear(layers[i], layers[i+1]))
             mdl_structure.append(nn.Dropout(config['dropout_proportion']))
             mdl_structure.append(self.activation())
-        mdl_structure.append(nn.Linear(layers[i], out_dim))
+        mdl_structure.append(nn.Linear(layers[i+1], out_dim))
 
 
         self.fc_in = nn.Sequential(*mdl_structure)

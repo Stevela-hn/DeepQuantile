@@ -10,7 +10,6 @@ import torch.nn as nn
 import torch.optim as optim
 from utils import create_folds, batches
 from torch_utils import clip_gradient, logsumexp
-import argparse
 
 
 '''Neural network to map from X to expectation of y.'''

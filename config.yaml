@@ -1,4 +1,4 @@
-layer_specs: [200, 200]  # N-2 layers that contains infos except input/output
+layer_specs: [200, 400, 200]  # N-2 layers that contains infos except input/output
 
 activation: "ReLU" # could be ["sigmoid", "ReLU", "tanh"]
 
